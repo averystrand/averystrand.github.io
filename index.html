@@ -197,7 +197,7 @@
   /* ── Work ── */
   .work-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
   .work-card {
@@ -329,7 +329,7 @@
     .hero h1 { font-size: 32px; }
     .hero p { font-size: 16px; }
     .card-grid { grid-template-columns: 1fr; }
-    .work-grid { grid-template-columns: 1fr; }
+    .work-grid { grid-template-columns: 1fr !important; }
     .process-grid { grid-template-columns: repeat(2, 1fr); gap: 32px; }
     .hero-cta-secondary { margin-left: 0; margin-top: 12px; display: inline-flex; }
     .cta-section h2 { font-size: 26px; }
@@ -355,15 +355,14 @@
     <div class="hero-label">GTM Engineer</div>
     <h1>I build the systems that generate your pipeline.</h1>
     <p>Lead magnets that capture and convert. Internal tools that make your team faster. Outbound automation that runs without you. Shipped in days, not quarters.</p>
-    <a href="mailto:avery@averystrand.com" class="hero-cta">Get in touch</a>
-    <a href="#work" class="hero-cta-secondary">See the work</a>
-  </div>
+    <a href="mailto:avery@averystrand.com" class="hero-cta">Book a call</a>
+    <a href="#work" class="hero-cta-secondary">See the work</a>  </div>
 
   <!-- What I Build -->
   <section>
     <div class="section-label">What I Build</div>
     <h2 class="section-title">GTM infrastructure, end to end.</h2>
-    <p class="section-desc">Everything a revenue team needs to generate, qualify, and close pipeline — built as real software, not spreadsheets and duct tape.</p>
+    <p class="section-desc">Everything a revenue team needs to generate, qualify, and close pipeline. Built as real software.</p>
     <div class="card-grid">
       <div class="card">
         <div class="card-icon">&#9672;</div>
@@ -387,8 +386,55 @@
   <section id="work">
     <div class="section-label">Selected Work</div>
     <h2 class="section-title">Built, deployed, generating pipeline.</h2>
-    <p class="section-desc">Real tools running in production for real revenue teams.</p>
+    <p class="section-desc">Systems, tools, and campaigns running in production for real revenue teams.</p>
     <div class="work-grid">
+      <div class="work-card">
+        <span class="tag">Internal Tool</span>
+        <h3>Referral Database</h3>
+        <p>A full referral management system replacing a shared spreadsheet. Search, filter, sort, score, and route referrals across the sales team.</p>
+        <ul>
+          <li>CSV import with fuzzy header matching</li>
+          <li>Slack slash commands for referral lookups</li>
+          <li>Signed-cookie auth with password gate</li>
+          <li>One-click intro request workflow</li>
+        </ul>
+      </div>
+      <div class="work-card">
+        <span class="tag">Automation</span>
+        <h3>Revenue Team Bots</h3>
+        <p>Lightweight bots that live where your team already works. Surface pipeline data, trigger workflows, and eliminate the tab-switching that kills rep productivity.</p>
+        <ul>
+          <li>Pipeline health checks and deal alerts</li>
+          <li>Dead deal re-engagement triggers</li>
+          <li>Contact enrichment on demand</li>
+          <li>Referral lookups and intro routing</li>
+          <li>Plugs into Slack, Teams, or custom dashboards</li>
+        </ul>
+      </div>
+      <div class="work-card">
+        <span class="tag">Events</span>
+        <h3>Event Intelligence System</h3>
+        <p>End-to-end event coverage — scrape attendee data from registration portals before the event, then automate personalized follow-up sequences after.</p>
+        <ul>
+          <li>Pre-event portal scraping for high-fidelity attendee lists</li>
+          <li>Enrichment and ICP scoring before you show up</li>
+          <li>Post-event follow-up sequences by persona</li>
+          <li>CRM sync with event attribution</li>
+          <li>Works with any conference, webinar, or field event</li>
+        </ul>
+      </div>
+      <div class="work-card">
+        <span class="tag">Enrichment</span>
+        <h3>Signal-Based List Building</h3>
+        <p>Custom enrichment pipelines that turn a target account list into a prioritized, ready-to-sequence prospect list with full context.</p>
+        <ul>
+          <li>Technographic, firmographic, and intent signals</li>
+          <li>De-anonymization and contact discovery</li>
+          <li>ICP scoring and segmentation</li>
+          <li>Enrichment waterfalls across multiple vendors</li>
+          <li>Clean handoff to CRM or sequencer</li>
+        </ul>
+      </div>
       <div class="work-card">
         <span class="tag">Lead Magnet</span>
         <h3>Utility Bill Audit Tool</h3>
@@ -402,38 +448,15 @@
         </ul>
       </div>
       <div class="work-card">
-        <span class="tag">Internal Tool</span>
-        <h3>Referral Database</h3>
-        <p>A full referral management system replacing a shared spreadsheet. Search, filter, sort, score, and route referrals across the sales team.</p>
-        <ul>
-          <li>Tinder-style card UI for quick qualification</li>
-          <li>CSV import with fuzzy header matching</li>
-          <li>Slack slash commands for referral lookups</li>
-          <li>Signed-cookie auth with password gate</li>
-          <li>One-click intro request workflow</li>
-        </ul>
-      </div>
-      <div class="work-card">
-        <span class="tag">Lead Magnet</span>
-        <h3>Regulatory Compliance Scanner</h3>
-        <p>Prospects enter their industry and jurisdiction, get a report on upcoming regulations that affect their business with timeline and cost estimates.</p>
-        <ul>
-          <li>AI-generated compliance analysis</li>
-          <li>Risk scoring by regulation type</li>
-          <li>Branded report with company colors</li>
-          <li>Lead capture and Slack notifications</li>
-        </ul>
-      </div>
-      <div class="work-card">
         <span class="tag">Outbound</span>
-        <h3>9-Play Outbound Framework</h3>
-        <p>A complete outbound system covering every stage of the buyer journey, from cold to warm to re-engagement.</p>
+        <h3>Outbound Plays</h3>
+        <p>Modular outbound campaigns built around real buying signals. Each play targets a specific trigger with tailored sequencing.</p>
         <ul>
-          <li>Movers &amp; shakers (job change triggers)</li>
+          <li>Job change capture and hiring signal triggers</li>
           <li>Competitor displacement sequences</li>
-          <li>Event-based follow-up automation</li>
-          <li>Referral-driven warm intros</li>
           <li>Wake-the-dead re-engagement campaigns</li>
+          <li>Warm intro workflows via referral network</li>
+          <li>Multi-touch: email, LinkedIn, gifting</li>
         </ul>
       </div>
     </div>
@@ -475,7 +498,7 @@
   <div class="container">
     <h2>Let's build your GTM engine.</h2>
     <p>I work on a project basis or monthly retainer. Tell me what you're trying to do and I'll tell you exactly how I'd build it.</p>
-    <a href="mailto:avery@averystrand.com" class="hero-cta">Get in touch</a>
+    <a href="mailto:avery@averystrand.com" class="hero-cta">Book a call</a>
   </div>
 </div>
 

@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Avery Strand — GTM Engineer</title>
 <meta name="description" content="I build GTM infrastructure that generates pipeline. Lead magnets, internal tools, outbound automation, CRM wiring. TypeScript, shipped in days.">
+<script>
+  (function() {
+    var s = localStorage.getItem('theme');
+    if (s === 'dark' || (!s && window.matchMedia('(prefers-color-scheme: dark)').matches))
+      document.documentElement.setAttribute('data-theme', 'dark');
+  })();
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -24,6 +31,23 @@
     --accent: #2B5CE6;
     --accent-light: #EBF0FD;
     --white: #FFFFFF;
+  }
+
+  [data-theme="dark"] {
+    --sand-50: #1A1A1E;
+    --sand-100: #222226;
+    --sand-200: #2E2E33;
+    --sand-300: #3A3A40;
+    --sand-400: #4A4A52;
+    --sand-500: #6B6B75;
+    --sand-600: #9090A0;
+    --sand-700: #B0B0BC;
+    --sand-800: #D0D0D8;
+    --ink: #EDEDEF;
+    --ink-light: #A8A8B4;
+    --accent: #5B8AF2;
+    --accent-light: #1E2A45;
+    --white: #222226;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -323,6 +347,22 @@
   }
   footer a:hover { color: var(--ink); }
 
+  /* ── Theme toggle ── */
+  .theme-toggle {
+    background: none;
+    border: 1px solid var(--sand-300);
+    border-radius: 100px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1;
+    color: var(--ink);
+    transition: border-color 0.15s;
+  }
+  .theme-toggle:hover { border-color: var(--ink); }
+  [data-theme="dark"] .theme-toggle-icon::after { content: '☀'; }
+  .theme-toggle-icon::after { content: '☾'; }
+
   /* ── Responsive ── */
   @media (max-width: 768px) {
     .hero { padding: 64px 0 56px; }
@@ -345,6 +385,7 @@
       <a href="#work">Work</a>
       <a href="#process">Process</a>
       <a href="https://calendly.com/averystrand/30min">Contact</a>
+      <button class="theme-toggle" aria-label="Toggle dark mode"><span class="theme-toggle-icon"></span></button>
     </div>
   </div>
 </nav>
@@ -509,5 +550,17 @@
   </div>
 </footer>
 
+<script>
+  document.querySelector('.theme-toggle').addEventListener('click', function() {
+    var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    if (isDark) {
+      document.documentElement.removeAttribute('data-theme');
+      localStorage.setItem('theme', 'light');
+    } else {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+    }
+  });
+</script>
 </body>
 </html>

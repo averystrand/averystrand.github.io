@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Avery Strand — Résumé (detailed)</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  @page {
+    size: letter;
+    margin: 0.55in 0.6in;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  body {
+    font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 9.2pt;
+    line-height: 1.45;
+    color: #1a1a1a;
+  }
+
+  a { color: #1a4fd0; text-decoration: none; }
+
+  /* ── Header ── */
+  h1 {
+    font-size: 21pt;
+    font-weight: 700;
+    letter-spacing: -0.028em;
+    line-height: 1;
+    margin-bottom: 5pt;
+  }
+  .contact {
+    font-size: 9pt;
+    color: #3a3a3a;
+    margin-bottom: 3pt;
+  }
+  .contact span, .livework span { color: #b8b8b8; margin: 0 4pt; }
+  .livework {
+    font-size: 9pt;
+    margin-bottom: 6pt;
+  }
+  .livework b { font-weight: 600; }
+  .summary {
+    font-size: 9.2pt;
+    color: #2a2a2a;
+    padding-bottom: 7pt;
+    border-bottom: 1.1pt solid #1a1a1a;
+  }
+
+  /* ── Sections ── */
+  h2 {
+    font-size: 8.8pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.09em;
+    margin: 12pt 0 7pt;
+    padding-bottom: 3pt;
+    border-bottom: 0.5pt solid #c8c8c8;
+  }
+
+  /* ── Roles ── */
+  .role {
+    margin-bottom: 13pt;
+  }
+  /* Keep a company header from stranding at the foot of a page, but let a long
+     role's body flow across the break instead of forcing a near-empty page. */
+  .role-head, .role-title { break-after: avoid; }
+  .block, .role-intro { break-inside: avoid; }
+  .role:last-child { margin-bottom: 0; }
+  .role-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10pt;
+  }
+  .role-co {
+    font-size: 11pt;
+    font-weight: 700;
+    letter-spacing: -0.012em;
+  }
+  .role-co em {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9pt;
+    color: #5a5a5a;
+  }
+  .role-when {
+    font-size: 8.8pt;
+    color: #5a5a5a;
+    white-space: nowrap;
+    font-weight: 500;
+  }
+  .role-title {
+    font-size: 9.4pt;
+    font-weight: 600;
+    color: #2a2a2a;
+    margin-bottom: 5pt;
+  }
+  .role-title em {
+    font-style: normal;
+    font-weight: 400;
+    color: #5a5a5a;
+  }
+  .role-intro {
+    color: #2a2a2a;
+    margin-bottom: 6pt;
+  }
+
+  /* Run-in labelled paragraphs */
+  .block {
+    margin-bottom: 5.5pt;
+    color: #2a2a2a;
+  }
+  .block:last-child { margin-bottom: 0; }
+  .block b.lbl {
+    font-weight: 700;
+    color: #1a1a1a;
+  }
+  b, strong { font-weight: 600; }
+
+  /* ── Skills ── */
+  .skill-row {
+    margin-bottom: 4pt;
+    color: #2a2a2a;
+  }
+  .skill-row:last-child { margin-bottom: 0; }
+  .skill-row b { font-weight: 700; color: #1a1a1a; }
+
+  .edu { color: #2a2a2a; }
+</style>
+</head>
+<body>
+
+<h1>Avery Strand</h1>
+<div class="contact">
+  San Francisco Bay Area<span>|</span>averystrand@gmail.com<span>|</span>(408) 596-0743<span>|</span><a href="https://averystrand.com">averystrand.com</a><span>|</span><a href="https://linkedin.com/in/averystrand">linkedin.com/in/averystrand</a>
+</div>
+<div class="livework">
+  <b>Selected live work:</b>
+  <a href="https://utilitybillscan.com">utilitybillscan.com</a><span>|</span><a href="https://facilityrebates.com">facilityrebates.com</a><span>|</span><a href="https://sb253list.com">sb253list.com</a>
+</div>
+<p class="summary">
+  GTM Engineer who ships. Five years building demand generation as software: outbound systems, public lead-gen products, paid media instrumentation, and Salesforce engineering. Sourced pipeline in every role.
+</p>
+
+<h2>Experience</h2>
+
+<div class="role">
+  <div class="role-head">
+    <div class="role-co">Gravity <em>(sustainability and energy management software)</em></div>
+    <div class="role-when">Mar 2026 – Present</div>
+  </div>
+  <div class="role-title">GTM Engineer, solo <em>| Bay Area</em></div>
+  <p class="role-intro">Sole GTM engineer, reporting into marketing and working directly with the CRO, CEO, and founders. Own demand generation engineering, paid media, and de facto RevOps.</p>
+
+  <p class="block"><b class="lbl">Referral engine.</b> Built the referral program as software rather than a spreadsheet: an ICP scoring engine ranking referrer networks, a self-service portal where each referrer maintains their own contacts and sees intro status, a Slack lookup command answering "who can introduce us to this account," a customer-success intro-ask flow, and Salesforce fields and list views stamping every converted intro. <strong>Sourced 15 net-new opportunities and $1.02M in stamped pipeline in roughly four months</strong>, including late-stage enterprise deals in life sciences, defense, and data center infrastructure, plus additional influenced expansion pipeline. Direct mail plays produced a $45k closed-won with two expansions and a $150k opportunity at meeting booked.</p>
+
+  <p class="block"><b class="lbl">Paid media rebuild.</b> Took over a <strong>~$30k/month paid program</strong> (roughly $427k lifetime spend across Google, LinkedIn, and OpenAI ads) from a departing contractor with no working conversion tracking and spend figures that changed by source. Rebuilt it in ten weeks into an API-driven, CRM-attributed system. Stood up Google Ads API access and a scripted operations layer: cleared stale tracking templates from 18 campaigns, swept 4,560 search terms and applied 46 negative keywords across 9 campaigns after finding 55% of two weeks of search spend going to junk intent (~$4,300/month, ~$52k/year blocked), and repointed 18 ads to 16 migrated landing pages behind a URL verification gate with zero failures. Uploaded 2,464 hashed customer records as a Customer Match list and attached it as an exclusion on every live campaign.</p>
+
+  <p class="block"><b class="lbl">First-party attribution, click to opportunity.</b> Built attribution end to end. Eight parameters (UTMs plus Google, LinkedIn, and Microsoft click IDs) captured in a 90-day first-party cookie across four web properties and written to dedicated Salesforce fields on every form submission, with flows stamping LeadSource under an overwrite policy negotiated with marketing. Closed the conversion feedback loop on three ad platforms: daily server-side Salesforce conversion uploads to Google via the Data Manager API, to OpenAI via its Ads API, and native LinkedIn lead-form sync with an Apex converter turning a form fill into an attributed Contact in about a minute. Replaced manual CSV reporting with a scheduled report on live GAQL, and retired HubSpot from the loop. Audit work traced <strong>689 form leads from a $42.7k search campaign to zero opportunities</strong> and surfaced $105k of LinkedIn spend hidden behind a default export filter.</p>
+
+  <p class="block"><b class="lbl">Cost reduction.</b> <strong>Eliminated roughly $209k in annual run-rate cost</strong> across seven months: took a $60k/year paid media contractor in-house, replaced a $55k/year enrichment platform with internally built tooling, retired HubSpot at $4k/month by moving attribution onto Salesforce, and retired ZoomInfo at $3.8k/month. Separately redirected ~$52k/year of search spend that was going to junk intent.</p>
+
+  <p class="block"><b class="lbl">Public lead-gen products.</b> Shipped and operated <strong>three public tools on their own domains</strong>, each wired end to end into the CRM: a utility bill analyzer (utilitybillscan.com) with PDF rate-schedule parsing, a seven-category findings engine, and a Claude vision fallback for scanned and photographed bills; a facility rebate finder (facilityrebates.com); a California SB 253 applicability checker (sb253list.com) with a disclosure-gap export, written vendor-agnostic and updated the day the state moved the reporting deadline. Shared infrastructure across all three: lead capture into Salesforce with report links written onto the Contact, PostHog per-lead identification, Slack alerting, DNS provisioning by API, token-gated report URLs, rate limiting, and nginx/systemd VM deployment.</p>
+
+  <p class="block"><b class="lbl">Signal plays and outbound.</b> Built targeting from public datasets competitors were not using. A utility commission docket monitor across four states running twice weekly with Slack alerts matched to target accounts; 488 closed-lost opportunities classified by objection type into 266 time-based re-approach triggers covering ~$14M of prior pipeline, routed to BDRs through sequences with a Slack digest and unenroll list; 205 named DOE industrial assessment grant winners ($41M in awards) reconstructed from a surviving export after the source database was anonymized; a followers play enriching 1,247 founder followers into 223 scored target accounts. Nine outbound plays documented with standard operator runbooks.</p>
+
+  <p class="block"><b class="lbl">Salesforce and RevOps engineering.</b> Deployed flows and Apex through the sf CLI as reviewed changesets, <strong>21 executed</strong>, every one written and approved as a document before apply with before/after exports kept for rollback. Shipped three LeadSource stampers under a strict overwrite policy, opportunity LeadSource inheritance from primary contact and contact roles, a LinkedIn lead converter, lead-magnet report links on Contact, referral tracking fields with a dedicated list view, and auto-refreshed customer and competitor suppression lists. Ran HubSpot retirement as an explicit program.</p>
+
+  <p class="block"><b class="lbl">Internal sales tooling.</b> Put enrichment and research where reps already work. Slack slash commands for AI pre-call account briefings, prospect lookup, pipeline health monitoring, and referral search; a bulk LinkedIn lookup web tool that matches Salesforce first and falls back to an enrichment vendor, auto-creating contacts and backfilling profile URLs; a Chrome extension for one-click enrichment from any LinkedIn profile with stale-contact re-enrichment; an ESG report surfacer mapping a rep's book to each account's published sustainability report with talk hooks; and two prospect-branded demo report tools.</p>
+
+  <p class="block"><b class="lbl">Agent-operated codebase.</b> Built the GTM monorepo to be operated by an AI agent with a human directing and approving. 34 task-specific skills, a structured knowledge vault (ICP, personas, competitive intelligence, founder voice guides mined from call transcripts), and guardrails implemented as code rather than policy: no outbound send and no ad-account mutation without a review document and explicit approval, every CRM change written as a changeset first, before/after exports on every mutation. Anthropic SDK embedded in shipped products for document parsing, classification, and summarization.</p>
+</div>
+
+<div class="role">
+  <div class="role-head">
+    <div class="role-co">Coast <em>(fintech)</em></div>
+    <div class="role-when">Mar 2025 – Mar 2026</div>
+  </div>
+  <div class="role-title">GTM Engineer, sole marketer <em>| New York</em></div>
+
+  <p class="block"><b class="lbl">Foundation and strategy.</b> Sole marketer, responsible for building Coast's content and demand generation engines from the ground up, with a focus on signal-based and intent-driven top-of-funnel programs. Built and launched core demand gen functions including content (blogs, case studies, social), outbound programs, inbound, paid search, events, and gifting.</p>
+
+  <p class="block"><b class="lbl">Outbound automation.</b> Created a fully automated outbound engine in Clay covering contact sourcing, messaging, workflow automation, and campaign execution. Launched dozens of plays, <strong>generating 150+ net new meetings in twelve months</strong>.</p>
+
+  <p class="block"><b class="lbl">Inbound programs.</b> Drove pipeline through fintech community sponsorships (podcasts, newsletters, interviews), paid ads on LinkedIn and Google, and hosted events including dinners with pre and post event campaigns.</p>
+
+  <p class="block"><b class="lbl">Expansion and ABM.</b> Built a custom referral database and internal program to drive warm leads. Partnered with AEs, fractional sellers, execs, and CS to expand within top customer accounts using targeted ABM campaigns.</p>
+
+  <p class="block"><b class="lbl">Tools and vendors.</b> Owned CRM migration and GTM stack procurement. Consolidated data providers to boost deliverability and save Coast tens of thousands. Built an internal website reps use to look up emails and qualify companies from LinkedIn URLs, powered by Clay and a qualification engine I built.</p>
+</div>
+
+<div class="role">
+  <div class="role-head">
+    <div class="role-co">Material Security</div>
+    <div class="role-when">Oct 2022 – Mar 2025</div>
+  </div>
+  <div class="role-title">Demand Generation Specialist, ABM <em>(Apr 2023 – Mar 2025)</em> | Senior SDR <em>(Oct 2022 – Apr 2023)</em> | <em>Remote</em></div>
+  <p class="role-intro">Recruited by Veza's CRO to join him at Material Security. Moved from sales development into marketing after seven months, then designed personalized campaigns at scale for two years.</p>
+
+  <p class="block"><b class="lbl">Designed and scaled outbound campaigns.</b> Built and executed multi-channel, intent-based outreach strategies targeting enterprise buyers, using automation and AI-driven personalization. <strong>Personally sourced over 180 new business opportunities in two years, leading to over $500k in revenue</strong> for the company.</p>
+
+  <p class="block"><b class="lbl">Automated and data-driven outreach.</b> Developed an automated outbound system integrating Clay, PhantomBuster, ZoomInfo, LinkedIn, and Sendoso, enriching prospect data and running hyper-personalized campaigns at scale. A/B tested messaging, creative, subject lines, and calls to action, building audiences and tactics for new plays weekly.</p>
+
+  <p class="block"><b class="lbl">Account-based marketing.</b> Led highly personalized ABM campaigns for Account Executives' target and key accounts across the US. Designed and launched an exec aircover program for high impact, low cost outreach, and built an internal referral program leveraging executive and employee networks.</p>
+
+  <p class="block"><b class="lbl">Vendor and signal programs.</b> Owned four high-impact demand-gen vendor programs, sourcing dozens of qualified deals, tracking performance, and iterating as the ICP changed. Used 6sense, Sales Navigator, Common Room, and Keyplay intent data to bucket and prioritize accounts by tech stack, ICP criteria, and buyer persona. Managed the CEO's LinkedIn and email outreach.</p>
+</div>
+
+<div class="role">
+  <div class="role-head">
+    <div class="role-co">Veza</div>
+    <div class="role-when">May 2022 – Oct 2022</div>
+  </div>
+  <div class="role-title">Sales Development Representative <em>| Los Gatos, CA</em></div>
+  <p class="block">Targeted enterprise and mid-market accounts in the Silicon Valley territory. Consistently led the SDR team in meeting volume, achieving a 5:1 meeting-to-booked ratio.</p>
+</div>
+
+<div class="role">
+  <div class="role-head">
+    <div class="role-co">Uber</div>
+    <div class="role-when">May 2017 – Apr 2018</div>
+  </div>
+  <div class="role-title">Account Executive <em>| Seattle, WA</em></div>
+  <p class="block">Transitioned from a sales intern to a full-cycle account executive, <strong>generating $2.1M in revenue</strong>. Doubled the company's weekly close minimum, outperforming every quota set.</p>
+</div>
+
+<h2>Skills and Tools</h2>
+
+<div class="skill-row"><b>Engineering, through Claude Code and Devin:</b> Claude Code as the operating layer, directing and reviewing rather than typing every line; Devin for website edits since moving off Webflow. TypeScript (Express, Node), Python, REST API integration, web app development and deployment (nginx, systemd, Linux VMs), Chrome extensions, PDF and document parsing, cron and scheduled jobs, HMAC auth, rate limiting, secrets management (1Password CLI), git and PR-gated workflows. Anthropic SDK in production applications, agent skill authoring, vision-based document extraction, LLM classification pipelines, MCP-callable functions.</div>
+
+<div class="skill-row"><b>CRM and RevOps:</b> Salesforce (SOQL, Flow Builder, Apex, sf CLI, changeset discipline, campaign and attribution modeling), HubSpot, Attio, lead routing, LeadSource governance, suppression and exclusion list management, CRM migration.</div>
+
+<div class="skill-row"><b>Paid Media:</b> Google Ads API and Data Manager API, LinkedIn Campaign Manager and Marketing API, OpenAI Ads API, Customer Match, server-side conversion upload, first-party click ID capture, UTM standards, search term and negative keyword management.</div>
+
+<div class="skill-row"><b>GTM Stack:</b> Clay, Unify, PhantomBuster, Gong, Outreach, ZoomInfo, 6sense, Sales Navigator, Common Room, Keyplay, Clearbit, Sendoso, Vendelux, Sagetap, ViB, DoGood, Execweb, Sumble, n8n.</div>
+
+<div class="skill-row"><b>Analytics and Content:</b> PostHog, GA4, DataForSEO, Keywords Everywhere, Webflow, Remotion, ElevenLabs, Notion, Linear, Google Workspace.</div>
+
+<div class="skill-row"><b>Growth Marketing:</b> Email marketing, campaign automation and management, vendor negotiation, performance tracking and reporting, direct mail, ABM, warm and cold prospecting, intent-based targeting, A/B testing, and 110 wpm.</div>
+
+<h2>Education</h2>
+<p class="edu">B.A., Creative Writing, University of Washington, 2020</p>
+
+</body>
+</html>
